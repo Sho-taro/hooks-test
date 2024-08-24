@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Basic1 = () => {
+const Basic1 = ({ name }) => {
     return (
         <>
-            <h1>Hello React2</h1>
+            <h1>Hello { name }</h1>
         </>
     );
 };
