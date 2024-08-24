@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-// import Basic1 from './components/Basic1'
+// import Basic1 from './components/Basic1';
 import Basic2 from './components/Basic2';
-import Basic3 from './components/Basic3';
+// import Basic3 from './components/Basic3';
+import Basic4 from './components/Basic4';
 
 function App() {
 	return (
@@ -12,7 +13,8 @@ function App() {
 				{/* <Basic1 name="Sho" />
         <Basic1 name="Taro" /> */}
         {/* <Basic2 /> */}
-        <Basic3 />
+        {/* <Basic3 /> */}
+        <Basic4 />
 			</header>
 		</div>
 	);
