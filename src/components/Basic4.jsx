@@ -7,7 +7,7 @@ const Basic4 = () => {
     }
     useEffect(() => {
         console.log("useEffect invoked!")   // レンダリングが起こるたびに実行される
-    }, [])
+    })
 
 
     return (
