@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Basic1 from './components/Basic1'
+// import Basic1 from './components/Basic1'
 import Basic2 from './components/Basic2';
+import Basic3 from './components/Basic3';
 
 function App() {
 	return (
@@ -10,7 +11,8 @@ function App() {
 				<img src={logo} className="App-logo" alt="logo" />
 				{/* <Basic1 name="Sho" />
         <Basic1 name="Taro" /> */}
-        <Basic2 />
+        {/* <Basic2 /> */}
+        <Basic3 />
 			</header>
 		</div>
 	);
