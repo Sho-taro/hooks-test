@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 // import Basic1 from './components/Basic1';
-import Basic2 from './components/Basic2';
+// import Basic2 from './components/Basic2';
 // import Basic3 from './components/Basic3';
 // import Basic4 from './components/Basic4';
-import TimerContainer from './components/TimerContainer';
+// import TimerContainer from './components/TimerContainer';
+import Fetch from './components/api/Fetch';
 
 function App() {
 	return (
@@ -16,7 +17,8 @@ function App() {
         {/* <Basic2 /> */}
         {/* <Basic3 /> */}
         {/* <Basic4 /> */}
-        <TimerContainer />
+        {/* <TimerContainer /> */}
+        <Fetch />
 			</header>
 		</div>
 	);
