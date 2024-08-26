@@ -8,6 +8,7 @@ import './App.css';
 // import Fetch from './components/api/Fetch';
 import AppContext from './contexts/AppContext';
 import Child from './components/Child';
+import Reducer from './components/Reducer';
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 					{/* <TimerContainer /> */}
 					{/* <Fetch /> */}
 					<Child />
+					<Reducer />
 				</header>
 			</div>
 		</AppContext.Provider>
