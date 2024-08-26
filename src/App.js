@@ -9,6 +9,7 @@ import './App.css';
 import AppContext from './contexts/AppContext';
 import Child from './components/Child';
 import Reducer from './components/Reducer';
+import UseMemo from './components/UseMemo';
 
 function App() {
 	return (
@@ -23,8 +24,9 @@ function App() {
 					{/* <Basic4 /> */}
 					{/* <TimerContainer /> */}
 					{/* <Fetch /> */}
-					<Child />
-					<Reducer />
+					{/* <Child /> */}
+					{/* <Reducer /> */}
+					<UseMemo />
 				</header>
 			</div>
 		</AppContext.Provider>
