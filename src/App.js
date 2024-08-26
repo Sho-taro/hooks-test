@@ -7,9 +7,9 @@ import './App.css';
 // import TimerContainer from './components/TimerContainer';
 // import Fetch from './components/api/Fetch';
 import AppContext from './contexts/AppContext';
-import Child from './components/Child';
-import Reducer from './components/Reducer';
-import UseMemo from './components/UseMemo';
+// import Child from './components/Child';
+// import Reducer from './components/Reducer';
+// import UseMemo from './components/UseMemo';
 
 function App() {
 	return (
@@ -26,7 +26,7 @@ function App() {
 					{/* <Fetch /> */}
 					{/* <Child /> */}
 					{/* <Reducer /> */}
-					<UseMemo />
+					{/* <UseMemo /> */}
 				</header>
 			</div>
 		</AppContext.Provider>

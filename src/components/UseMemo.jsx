@@ -17,7 +17,7 @@ const UseMemo = () => {
         for (let i = 0; i <= 10 ** 9; i++) {
             i++;
         }
-        return count1 % 2 == 1;
+        return count1 % 2 === 1;
     }
 
     // 再レンダされるたびに処理の重いisOddCount1関数が実行される。Add2ボタンを押したときも処理が重い。
