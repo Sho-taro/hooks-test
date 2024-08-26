@@ -10,8 +10,22 @@ import AppContext from './contexts/AppContext';
 // import Child from './components/Child';
 // import Reducer from './components/Reducer';
 // import UseMemo from './components/UseMemo';
+import CountDisplay from './components/CountDisplay';
+import CountBtn from './components/CountBtn';
+import { useState, useCallback } from 'react';
 
 function App() {
+	const [count1, setCount1] = useState(0);
+	const [count2, setCount2] = useState(0);
+
+	// useCallbackを使用しない場合、再レンダのたびに関数が定義し直される
+	const addCount1 = useCallback(() => {
+		setCount1(prev => prev + 1);
+	}, []);
+	const addCount2 = useCallback(() => {
+		setCount2(prev => prev + 1);
+	}, []);
+
 	return (
 		<AppContext.Provider value={'value from App.js'}>
 			<div className="App">
@@ -27,6 +41,10 @@ function App() {
 					{/* <Child /> */}
 					{/* <Reducer /> */}
 					{/* <UseMemo /> */}
+					<CountDisplay name="count1" value={count1} />
+					<CountBtn handleClick={addCount1}>addCount1</CountBtn>
+					<CountDisplay name="count2" value={count2} />
+					<CountBtn handleClick={addCount2}>addCount2</CountBtn>
 				</header>
 			</div>
 		</AppContext.Provider>
